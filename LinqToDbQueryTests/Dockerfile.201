@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0.201-noble
+
+WORKDIR /src
+
+COPY LinqToDbQueryTests.fsproj ./
+RUN dotnet restore
+
+COPY . .
+ENTRYPOINT ["dotnet", "test"]
