@@ -16,8 +16,8 @@
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="10.0.105" />
     <PackageReference Include="coverlet.collector" Version="6.0.4" />
-    <PackageReference Include="linq2db" Version="6.2.0" />
-    <PackageReference Include="linq2db.FSharp" Version="6.2.0" />
+    <PackageReference Include="linq2db" Version="6.2.1" />
+    <PackageReference Include="linq2db.FSharp" Version="6.2.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
     <PackageReference Include="NodaTime" Version="3.3.1" />
     <PackageReference Include="Npgsql" Version="10.0.2" />

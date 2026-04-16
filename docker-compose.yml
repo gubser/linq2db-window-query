@@ -12,6 +12,14 @@ services:
       timeout: 5s
       retries: 5
 
+  test-103:
+    build:
+      context: LinqToDbQueryTests
+      dockerfile: Dockerfile.103
+    depends_on:
+      postgres:
+        condition: service_healthy
+
   test-201:
     build:
       context: LinqToDbQueryTests
@@ -20,10 +28,10 @@ services:
       postgres:
         condition: service_healthy
 
-  test-103:
+  test-202:
     build:
       context: LinqToDbQueryTests
-      dockerfile: Dockerfile.103
+      dockerfile: Dockerfile.202
     depends_on:
       postgres:
         condition: service_healthy
